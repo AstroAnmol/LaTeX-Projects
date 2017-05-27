@@ -4,3 +4,4 @@
 \contentsline {section}{\numberline {1.3}Co-ordinate System}{5}{section.7}
 \contentsline {chapter}{\numberline {2}Constraints }{6}{chapter.8}
 \contentsline {chapter}{\numberline {3}Drawing Files}{7}{chapter.12}
+\contentsline {chapter}{\numberline {4}Tolerances}{8}{chapter.13}

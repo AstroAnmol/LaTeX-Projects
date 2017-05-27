@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.23)  27 MAY 2017 18:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.23)  27 MAY 2017 19:30
 entering extended mode
 **./main.tex
 (main.tex
@@ -804,8 +804,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box58
 \@float@everytoks=\toks35
 \@floatcapt=\box59
-)
-No file main.aux.
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -830,6 +829,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
+
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count140
@@ -867,25 +867,41 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 44.
 LaTeX Info: Redefining \pageref on input line 44.
 LaTeX Info: Redefining \nameref on input line 44.
+ (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
+
+<Figures/iitb_logo.png, id=31, 337.26pt x 344.03531pt>
+File: Figures/iitb_logo.png Graphic file (type png)
+ <use Figures/iitb_logo.png>
+Package pdftex.def Info: Figures/iitb_logo.png used on input line 77.
+(pdftex.def)             Requested size: 134.9016pt x 137.61168pt.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./Figures/iitb_logo.png>] (main.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
  [2
 
-]
+] (main.lot)
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
  [3
 
 
-]
+] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -903,39 +919,36 @@ Chapter 2.
 
 ]
 Chapter 3.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
 [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
+Chapter 4.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
+[8
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0DFAE8D11FA818E1C44E8201A7755818;782.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 5FB9E8C504558D0B125273776034BBBD;890.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
  ) 
 Here is how much of TeX's memory you used:
- 13402 strings out of 493328
- 186593 string characters out of 3139104
+ 13474 strings out of 493328
+ 187532 string characters out of 3139104
  264877 words of memory out of 3000000
- 16770 multiletter control sequences out of 15000+200000
- 7257 words of font info for 26 fonts, out of 3000000 for 9000
+ 16806 multiletter control sequences out of 15000+200000
+ 11911 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,5n,43p,459b,336s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on main.pdf (7 pages, 60839 bytes).
+Output written on main.pdf (8 pages, 86801 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 105 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
+ 62 words of extra memory for PDF output out of 10000 (max. 10000000)
 
