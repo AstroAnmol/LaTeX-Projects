@@ -1,0 +1,127 @@
+\documentclass[12pt, a4paper, oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{amsmath,amsfonts,amssymb,amscd,amsthm,xspace}
+\usepackage{titlesec}
+\usepackage{vmargin}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{booktabs}
+\usepackage{rotating}
+\usepackage{listings}
+%\usepackage[centerlast,small,sc]{caption}
+\usepackage[justification=centering]{caption}%for center aligning the image captions
+
+\usepackage[square, numbers, comma, sort&compress]{natbib} % Standard reference style with [3], [4] type numbers in the text and entries sorted according to order of appearance in the References
+\usepackage[pdfpagemode={UseOutlines},bookmarks=true,bookmarksopen=true,bookmarksopenlevel=0,bookmarksnumbered=true,hypertexnames=false,colorlinks,linkcolor={black},citecolor={black},urlcolor={black},pdfstartview={FitV},unicode,breaklinks=true]{hyperref}
+\hypersetup{urlcolor=black, colorlinks=true} % colors hyperlinks in blue - change to black if annoying
+\usepackage{float}
+\DeclareMathOperator*{\argmin}{argmin}
+%\OnehalfSpacing
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\centering}
+  {\chaptertitlename\ \thechapter}{18pt}{\Huge}
+	\titlespacing{\chapter}{0pt}{-50pt}{10pt}%To reduce spacing on top of chapter titles
+
+\setmarginsrb   { 3.0cm}  % left margin
+                { 2.5cm}  % top margin
+                { 2.0cm}  % right margin
+                { 2.2cm}  % bottom margin
+                { 0.3cm}  % head height
+                { 1.2cm}  % head sep
+                { 0.3pt}  % foot height
+                { 1.0cm}  % foot sep
+
+\begin{document}
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%   TITLEPAGE
+%
+%   due to variety of titlepage schemes it is probably better to make titlepage manually
+%
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+\thispagestyle{empty}
+
+{%%%
+\sffamily
+\centering
+\Large
+
+~\vspace{\fill}
+
+{\huge 
+\bfseries{ADVITIY\\ \bigskip IIT BOMBAY STUDENT SATELLITE}
+}
+
+\vspace{2cm}
+
+{\LARGE
+\bfseries{Solidworks Model\\ \bigskip Mechanical Subsystem}
+}
+
+\vspace{2cm}
+
+By \\ \bigskip \bfseries{(Insert your name.)}
+
+\vspace{1.5cm}
+
+%\includegraphics[scale=1]{Figures/IITB_and_PRATHAM_Logos.png}
+
+
+\vspace{2.5cm}
+\bfseries{Department of Aerospace Engineering, \\ \bigskip Indian Institute of Technology, Bombay\\ \bigskip
+May 2017}
+
+%%%
+}%%%
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
+\tableofcontents
+\clearpage
+\listoftables
+\clearpage
+\listoffigures
+\clearpage
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
+\chapter{Introduction}
+
+\section{Abstract}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\vspace*{1\baselineskip}
+
+This document corresponds to "YYMMDD\_initials\_docname".
+
+\section{Unit System}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Co-ordinate System}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Also insert final model with co-ordinate system mentioned.
+
+\chapter{Constraints }
+
+\begin{enumerate}
+  \item First Constraint.
+  \item Second Constraint.
+  \item So on...
+\end{enumerate}
+
+\chapter{Drawing Files}
+Insert Drawing File Images.
+
+\end{document}
