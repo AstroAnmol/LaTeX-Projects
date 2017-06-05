@@ -1,0 +1,138 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp,amsmath,longtable}
+\usepackage{latexsym}
+\usepackage{setspace}
+\usepackage{amsmath,amsfonts,amssymb,amscd,amsthm,xspace}
+\usepackage{titlesec}
+\usepackage{vmargin}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{booktabs}
+\usepackage{rotating}
+\usepackage{listings}
+%\usepackage[centerlast,small,sc]{caption}
+\usepackage[justification=centering]{caption}%for center aligning the image captions
+
+\usepackage[square, numbers, comma, sort&compress]{natbib} % Standard reference style with [3], [4] type numbers in the text and entries sorted according to order of appearance in the References
+\usepackage[pdfpagemode={UseOutlines},bookmarks=true,bookmarksopen=true,bookmarksopenlevel=0,bookmarksnumbered=true,hypertexnames=false,colorlinks,linkcolor={black},citecolor={black},urlcolor={black},pdfstartview={FitV},unicode,breaklinks=true]{hyperref}
+\hypersetup{urlcolor=black, colorlinks=true} % colors hyperlinks in blue - change to black if annoying
+\usepackage{float}
+\DeclareMathOperator*{\argmin}{argmin}
+%\OnehalfSpacing
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\centering}
+  {\chaptertitlename\ \thechapter}{18pt}{\Huge}
+	\titlespacing{\chapter}{0pt}{-50pt}{10pt}%To reduce spacing on top of chapter titles
+
+\setmarginsrb   { 3.0cm}  % left margin
+                { 0cm}  % top margin
+                { 2.0cm}  % right margin
+                { 0cm}  % bottom margin
+                { 0.3cm}  % head height
+                { 1.2cm}  % head sep
+                { 0.3pt}  % foot height
+                { 1.0cm}  % foot sep
+\title{Solidworks QA}
+\author{Anmol Sikka}
+\date{June 2017}
+\renewcommand{\arraystretch}{1.5}
+\pagenumbering{gobble}% Remove page numbers (and reset to 1)
+
+\begin{document}
+
+{%%%
+\sffamily
+\centering
+\Large
+
+~\vspace{\fill}
+
+{\LARGE 
+\bfseries{ADVITIY - IIT BOMBAY STUDENT SATELLITE}
+}
+
+\vspace{.5cm}
+
+{\LARGE
+\bfseries{Solidworks Quality \& Assurance Check\\}
+}
+}
+
+%% Set up counters for questions
+%% 
+\newcounter{qnumber}
+
+\newcounter{hnumber}
+\setcounter{hnumber}{0}
+
+\newcommand{\yesno}{\textsf{Yes}~~\textsf{No}~~\textsf{NA} {\Large ~$\Box$}~~~~   {\Large $\Box$}~~~~{\Large ~$\Box$}}
+
+%% we now define the questions
+\newcommand{\boxquestion}[1]{
+    \hfill \relax \thehnumber.\theqnumber\hfill\hfill &\textsf{#1} &{\small\yesno} \stepcounter{qnumber}\\ \hline
+}
+\newcommand{\question}[1]{
+    \hfill \relax \thehnumber.\theqnumber\hfill\hfill &\textsf{#1} &\hrule 
+    \stepcounter{qnumber}\\ \hline
+}
+\newcommand{\checklist}[1]{
+    \hfill \relax \thehnumber.\theqnumber\hfill\hfill &\textsf{#1} &
+    \stepcounter{qnumber}\\
+    \hfill \relax\hfill\hfill &\hrule &{\small\yesno}
+    \\
+    \hfill \relax\hfill\hfill &\hrule &{\small\yesno}
+    \\
+    \hfill \relax\hfill\hfill &\hrule &{\small\yesno}
+    \\
+    \hfill \relax\hfill\hfill &\hrule &{\small\yesno}
+    \\
+    \hfill \relax\hfill\hfill &\hrule &{\small\yesno}
+    \\
+    \hfill \relax\hfill\hfill &\hrule &{\small\yesno}
+    \\\hline
+}
+
+
+%% we now define the questions
+\newcommand{\heading}[1]{
+ \stepcounter{hnumber}
+ \thehnumber.0 &\multicolumn{4}{|l|}{\bf\textsf{#1}}\\ \hline %
+ \setcounter{qnumber}{0}
+ \stepcounter{qnumber}
+
+}
+ 
+ 
+ \begin{longtable}{|c| m{10cm}|m{2cm}|b{1.5cm}|  b{1.55cm} |}
+\hline
+Sl.     &Quality Checks &  \\
+\hline\hline
+\heading{Systems}
+\question{What is the System of Units?}
+\boxquestion{Is the Co-ordinate System same as the Body Axis?}
+\heading{Dimensions}
+  \boxquestion{Is existing drawing file available?}
+  \boxquestion{Have dimensions been checked? (if yes to 3)}
+  \boxquestion{Have dimensions been listed? (if no to 3)}
+\heading{Constraints}
+    \boxquestion{Are there any constraints?}
+    \checklist{List down the constraints :}
+\heading{Tolerances}
+    \boxquestion{Are Tolerances mentioned?}
+    \boxquestion{Tolerances verified?}
+\heading{Assembly}
+    \boxquestion{Is there an assembly?}
+    \boxquestion{Mating verified?}
+\end{longtable}
+
+\end{document}
